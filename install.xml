@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Mylti-store:Different Prices for the same product</name>
+    <version>201909130</version>
+    <code>wid_Diff_Prices</code>
+    <author>G. Pan</author>
+    <link><![CDATA[https://www.opencart.com/index.php?route=marketplace/extension&filter_member=wid]]></link>
+	<file path="admin/view/template/catalog/product_form.twig">
+    <operation>
+        <search index="0"><![CDATA[{% endif %}]]></search>
+        <add position="after"><![CDATA[ <div class="alert alert-info"><i class="fa fa-info-circle"></i> MULTI-STORE: Different Prices for the same product<br/>Switch to the “Discount” tab. Assign the customer groups you created to each of your stores.<br/>Make sure that you enter 1 for “Quantity”, Otherwise you're creating a discount for bulk purchases only.</div>]]></add>
+    </operation>
+  </file>
+</modification>
